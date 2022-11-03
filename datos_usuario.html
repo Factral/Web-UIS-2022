@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datos usuario</title>
+</head>
+<body>
+
+    <h4><b>Rellena tu CV</b></h4>
+
+    <span>Nombre</span> <br>
+    <input type="text" id="nombre"> <br>
+
+    <span>Apellido</span> <br>
+    <input type="text" id="apellido"> <br>
+
+    <span>Contraseña</span> <br>
+    <input type="text" id="contraseña"> <br>
+
+    <br>
+    <span>Confirme contraseña</span> <br>
+    <input type="text" id="contraseña"> <br>
+
+    <span>Identificacion</span> <br>
+    <select name="identificacion" id="identificacion">
+        <option value="TI">TI</option>
+        <option value="CC">CC</option>
+        <option value="pasaporte">Pasaporte</option>
+    </select> <input type="text" id="identificacion"> <br>
+
+    <span>Sexo</span> <br>
+    <input type="radio" name="sexo" id="hombre"> Hombre<br>
+    <input type="radio" name="sexo" id="mujer"> Mujer <br>
+
+    <br>
+    <span>Incluir mi foto</span> <br>
+    <input type="file" name="foto" id="foto"> <br>
+
+    <br>
+    <input type="checkbox"> Estudiante....
+
+    <br><br>
+    <div style="border: 1px solid #000;">
+        Datos personales
+        <br><br>
+        <span>Departamento</span> <br>
+        <select name="departamento" id="departamento">
+            <option value="default">-selecciona-</option>
+            <option value="Antioquia">Antioquia</option>
+            <option value="Atlantico">Atlantico</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Bolivar">Bolivar</option>
+            <option value="Boyaca">Boyaca</option>
+            <option value="Caldas">Caldas</option>
+            <option value="Caqueta">Caqueta</option>
+            <option value="Casanare">Casanare</option>
+            <option value="Cauca">Cauca</option>
+            <option value="Cesar">Cesar</option>
+            <option value="Choco">Choco</option>
+            <option value="Cordoba">Cordoba</option>
+            <option value="Cundinamarca">Cundinamarca</option>
+            <option value="Guainia">Guainia</option>
+            <option value="Guaviare">Guaviare</option>
+            <option value="Huila">Huila</option>
+            <option value="La Guajira">La Guajira</option>
+            <option value="Magdalena">Magdalena</option>
+            <option value="Meta">Meta</option>
+            <option value="Narino">Narino</option>
+            <option value="Norte de Santander">Norte de Santander</option>
+            <option value="Putumayo">Putumayo</option>
+            <option value="Quindio">Quindio</option>
+            <option value="Risaralda">Risaralda</option>
+            <option value="San Andres y Providencia">San Andres y Providencia</option>
+            <option value="Santander">Santander</option>
+            <option value="Sucre">Sucre</option>
+            <option value="Tolima">Tolima</option>
+            <option value="Valle del Cauca">Valle del Cauca</option>
+            <option value="Vaupes">Vaupes</option>
+            <option value="Vichada">Vichada</option>
+        </select> <br> <br>
+
+        <span>Fecha de nacimiento</span> <br>
+        <input type="text"> 
+        de <select name="mes" id="mes">
+            <option value="enero">Enero</option>
+            <option value="febrero">Febrero</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agosto">Agosto</option>
+            <option value="septiembre">Septiembre</option>
+            <option value="octubre">Octubre</option>
+            <option value="noviembre">Noviembre</option>
+            <option value="diciembre">Diciembre</option>
+        </select> 
+        de <input type="text"> <br> <br>
+
+        <span>Temas de interés</span> <br>
+        <textarea></textarea>
+    </div>
+
+    <br>
+    <input type="submit" value="Guardar cambios">
+    <input type="reset" value="Borrar los datos introducidos">
+
+</body>
+</html>
