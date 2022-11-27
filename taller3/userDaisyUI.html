@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html data-theme="dracula" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.40.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="text-center mx-4 space-y-2">
+    <br />
+    <div class="flex justify-center">
+      <form action="">
+        <h1 class="text-5xl font-bold">Registro de usuario</h1>
+
+        <div class="divider"></div>
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">País</span>
+          </label>
+          <select class="select select-bordered">
+            <option disabled selected>Seleccione un País</option>
+            <option value="1">Colombia</option>
+            <option value="2">Perú</option>
+            <option value="3">Ecuador</option>
+            <option value="4">Venezuela</option>
+            <option value="5">Chile</option>
+            <option value="6">Argentina</option>
+            <option value="7">Brasil</option>
+            <option value="8">Bolivia</option>
+            <option value="9">Paraguay</option>
+            <option value="10">Uruguay</option>
+            <option value="11">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Nombre</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Ingrese su nombre"
+            class="input input-bordered w-full max-w-xs"
+          />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Apellido</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Ingrese su apellido"
+            class="input input-bordered w-full max-w-xs"
+          />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Direccion</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Ingrese su direccion"
+            class="input input-bordered w-full max-w-xs"
+          />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Usuario</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Ingrese su usuario"
+            class="input input-bordered w-full max-w-xs"
+          />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Contraseña</span>
+          </label>
+          <input
+            type="password"
+            placeholder="Ingrese su contraseña"
+            class="input input-bordered w-full max-w-xs"
+          />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Email</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Ingrese su correo"
+            class="input input-bordered w-full max-w-xs"
+          />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Telefono</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Ingrese su telefono"
+            class="input input-bordered w-full max-w-xs"
+          />
+        </div>
+        <br /><br />
+
+        <div class="flex justify-center">
+          <button class="btn btn-active btn-primary">Registrar</button>
+        </div>
+        <br/>
+      </form>
+    </div>
+  </body>
+
+</html>

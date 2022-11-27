@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html data-theme="dracula" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.40.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="text-center mx-4 space-y-2">
+    <br />
+    <h1 class="text-5xl font-bold">Registro de Vehiculo</h1>
+    <div class="divider"></div>
+    <form action="">
+
+    <div class="md:grid md:grid-cols-2 md:gap-4 justify-center">
+
+        <h1 class="text-3xl col-span-2">Datos basicos</h1>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Usuario</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Ingrese su usuario"
+              class="input input-bordered w-full max-w-xs"
+            />
+          </div>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Tipo de coche</span>
+          </label>
+          <select class="select select-bordered">
+            <option disabled selected> -- Elegir opcion --</option>
+            <option value="1">Urbano</option>
+            <option value="2">Deportivo</option>
+            <option value="3">Familiar</option>
+            <option value="4">Todoterreno</option>
+            </select>
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Modelo</span>
+            </label>
+            <input
+              type="text"
+            placeholder="Ingrese el modelo"
+              class="input input-bordered w-full max-w-xs"
+            />
+          </div>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Estado</span>
+            </label>
+            <select class="select select-bordered">
+              <option disabled selected>-- Elegir opcion --</option>
+                <option value="1">Nuevo</option>
+                <option value="2">Usado</option>
+            </select>
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Marca</span>
+            </label>
+            <select class="select select-bordered">
+              <option disabled selected>-- Elegir opcion --</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Chevrolet</option>
+                <option value="4">Ferrari</option>
+                <option value="5">Ford</option>
+                <option value="6">Honda</option>
+                <option value="7">Hyundai</option>
+                <option value="8">Kia</option>
+                <option value="9">Mazda</option>
+                <option value="10">Mercedes Benz</option>
+                <option value="11">Nissan</option>
+                <option value="12">Renault</option>
+                <option value="13">Toyota</option>
+                <option value="14">Volkswagen</option>
+            </select>
+        </div>
+
+                <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Año</span>
+            </label>
+            <select class="select select-bordered">
+              <option disabled selected>-- Elegir opcion --</option>
+                <option value="1">2021</option>
+                <option value="2">2020</option>
+                <option value="3">2019</option>
+                <option value="4">2018</option>
+                <option value="5">2017</option>
+                <option value="6">2016</option>
+                <option value="7">2015</option>
+                <option value="8">2014</option>
+                <option value="9">2013</option>
+                <option value="10">2012</option>
+                <option value="11">2011</option>
+                <option value="12">2010</option>
+                <option value="13">2009</option>
+                <option value="14">2008</option>
+                <option value="15">2007</option>
+                <option value="16">2006</option>
+                <option value="17">2005</option>
+                <option value="18">2004</option>
+                <option value="19">2003</option>
+                <option value="20">2002</option>
+                <option value="21">2001</option>
+                <option value="22">2000</option>
+                <option value="23">1999</option>
+                <option value="24">1998</option>
+                <option value="25">1997</option>
+                <option value="26">1996</option>
+                <option value="27">1995</option>
+                <option value="28">1994</option>
+                <option value="29">1993</option>
+                <option value="30">1992</option>
+                <option value="31">1991</option>
+                <option value="32">1990</option>
+                <option value="33">1989</option>
+                <option value="34">1988</option>
+                <option value="35">1987</option>
+                <option value="36">1986</option>
+                <option value="37">1985</option>
+                <option value="38">1984</option>
+                <option value="39">1983</option>
+                <option value="40">1982</option>
+                <option value="41">1981</option>
+            </select>
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Movido a</span>
+            </label>
+            <select class="select select-bordered">
+              <option disabled selected>-- Elegir opcion --</option>
+                <option value="1">Gasolina</option>
+                <option value="2">Diesel</option>
+                <option value="3">Hibrido</option>
+                <option value="4">Electrico</option>
+              </select>
+          </div>
+
+
+
+
+
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Detalles del vehiculo</span>
+            </label> 
+            <textarea class="textarea textarea-bordered h-30" placeholder="Parillas, luces, ventanas"></textarea>
+          </div>
+          
+          
+        <h1 class="text-3xl col-span-2">Caracteristicas</h1>
+
+        <div class="form-control max-w-xs mx-auto">
+          <label class="label">
+            <span class="label-text">Caja de cambios</span>
+          </label>
+          <input
+            type="number"
+            placeholder="Ingrese la caja"
+            class="input input-bordered w-full max-w-xs"
+          />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Motor</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Ingrese el serial"
+              class="input input-bordered w-full max-w-xs"
+            />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Fecha</span>
+            </label>
+            <input
+              type="date"
+              placeholder="Ingrese su correo"
+              class="input input-bordered w-full max-w-xs"
+            />
+        </div>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Precio</span>
+            </label>
+            <input
+              type="text"
+              placeholder="$$$"
+              class="input input-bordered w-full max-w-xs"
+            />
+          </div>
+
+        <div class="form-control max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">Moneda</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Ingrese la abreviatura"
+              class="input input-bordered w-full max-w-xs"
+            />
+          </div>
+
+        
+          <h1 class="text-3xl col-span-2">Descripciones</h1>
+
+
+        <div class="form-control container  max-w-2xl mx-auto col-span-2">
+            <label class="label">
+              <span class="label-text">Descripcion Principal</span>
+            </label> 
+            <textarea class="textarea textarea-bordered h-30" placeholder="----------"></textarea>
+          </div>
+
+          <div class="form-control container  max-w-2xl mx-auto col-span-2">
+            <label class="label">
+              <span class="label-text">Descripcion Secundaria</span>
+            </label> 
+            <textarea class="textarea textarea-bordered h-30" placeholder="----------"></textarea>
+          </div>
+
+          <div class="form-control container  max-w-2xl mx-auto col-span-2">
+            <label class="label">
+              <span class="label-text">Observaciones</span>
+            </label> 
+            <textarea class="textarea textarea-bordered h-30" placeholder="----------"></textarea>
+          </div>
+
+          <div class="form-control container  max-w-2xl mx-auto col-span-2">
+            <label class="label">
+              <span class="label-text">Destacados</span>
+            </label> 
+            <textarea class="textarea textarea-bordered h-30" placeholder="----------"></textarea>
+          </div>
+
+        <br /><br />
+
+        <div class="flex justify-center col-span-2">
+          <button class="btn btn-active btn-primary">Registrar</button>
+        </div>
+        <br/>
+    </div>
+</form>
+  </body>
+
+</html>
