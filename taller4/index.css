@@ -1,0 +1,52 @@
+.validacion_grupo-correcto .input{
+	border-color: #1ed12d;
+	opacity: 1;
+}
+
+.validacion_grupo-incorrecto .input{ 
+	border-color: #ff0000;
+	opacity: 1;
+}
+
+.validacion_grupo-correcto .label{
+	color: #169b21;
+	opacity: 1;
+}
+
+.validacion_grupo-incorrecto .label{ 
+	color: #ff0000;
+	opacity: 1;
+}
+
+.ayuda_nombre-correcto .help{
+	opacity: 0;
+}
+
+.ayuda_nombre-incorrecto .help{
+	opacity: 1;
+}
+
+/* -------------------------------------------------------- */
+
+#contenedor {
+  padding: 30px;
+  background-color: #BFD7EA;
+  border: solid 15px rgb(255, 255, 255);
+}
+p {
+  opacity: 0;
+}
+datalist {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+writing-mode: vertical-lr;
+width: 200px;
+}
+datalist option{
+  padding: 0;
+}
+input[type="range"] {
+  width: 200px;
+  margin: 0;
+}
