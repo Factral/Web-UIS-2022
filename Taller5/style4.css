@@ -1,0 +1,51 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+
+nav {
+    background-color: #eb016e;
+}  
+
+body {
+    background: #91858c;
+
+}
+
+h1{
+    margin: 50px;
+}
+
+#table{
+    background-color:#eea3d1;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+th {
+    background-color: rgb(70, 3, 53) ;
+    border: 3px solid #ddd;
+    padding: 8px;
+    text-align: center;
+
+}
+
+td {
+    background-color: rgb(172, 144, 169) ;
+    border: 3px solid #ddd;
+    padding: 8px;
+
+}
+
+#search
+{
+    color: rgb(23, 23, 108);
+    
+
+}

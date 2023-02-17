@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html  lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="style2.css" type="text/css" rel="stylesheet">
+<title>Registro de Usuario</title>
+</head>
+
+<body>
+
+<!-- Formulario -->
+<section class="form"> 
+<h4> <i class="medium material-icons">account_box</i> Registro de Usuario</h4>
+<form id="form">
+
+<fieldset class=fieldset>
+    <div class="progress">
+        <div class="determinate" style="width: 70%"></div>
+    </div>
+<legend><h3> Datos personales</h3></legend>
+
+<!-- País -->
+<div class="input-field col s12">
+    <i class="material-icons prefix">public</i>
+    <select class="select"> 
+      <option value="" disabled selected> - selecciona - </option>
+      <option value="value2">Argentina</option>
+      <option value="value3">Alemania</option>
+      <option value="value4">Australia</option>
+      <option value="value5">Bolivia</option>
+      <option value="value6">Bélgica</option>
+      <option value="value7">Brasil</option>
+      <option value="value8">Canadá</option>
+      <option value="value9">Chile</option>
+      <option value="value10">China</option>
+      <option value="value11">Colombia</option>
+      <option value="value12">Ecuador</option>
+      <option value="value13">Francia</option>
+      <option value="value14">Finlandia</option>
+      <option value="value15">Italia</option>
+      <option value="value16">Japón</option>
+      <option value="value17">México</option>
+      <option value="value18">Perú</option>
+      <option value="value19">Portugal</option>
+      <option value="value20">Suecia</option>
+      <option value="value21">Suiza</option>
+      <option value="value22">Venezuela</option>
+    </select>
+    <label> <h6>País</h6></label>
+</div>
+
+<!-- Nombre -->
+
+<div class="input-field col s6" id="g">
+   
+    <i class="material-icons prefix">account_circle</i>
+    
+    <input id="nombre" type="text" name="nombre" class="validate" required /><i class="material-icons prefix" id="incorrect1">cancel</i>
+    <i class="material-icons prefix cancel" id="b1">check_circle</i>
+   <label for="nombre">Nombre </label>
+   <h6 id="m1">Debe llenar este campo</h6>  <!-- m1 Message 1 -->
+   <h6 id="m2">El nombre no debe superar los 25 caracteres</h6> <!-- m2 Message 2 -->
+</div>
+
+
+<!-- Apellido  -->
+
+  <div class="input-field col s6">
+    <i class="material-icons prefix">account_circle</i>
+    <input id="apellido" type="text" name="apellido" class="validate" required>
+    <i class="material-icons prefix" id="incorrect2">cancel</i>  <!-- b1 bien 1 (Icono) -->
+    <i class="material-icons prefix cancel" id="b2">check_circle</i>
+    <label for="apellido">Apellido</label>
+    <h6 id="m3">Debe llenar este campo</h6>
+    <h6 id="m4">El apellido no debe superar los 25 caracteres</h6>
+  </div>
+
+<!-- Fecha de nacimiento -->
+
+<div class="input-field col s6">
+  <i id="fecha" class="material-icons prefix">date_range</i> 
+  <input id="fechan" name="fechan" class="datepicker" type="text" style="color:black;" >
+
+  <label for="fecha">Fecha de nacimiento</label>
+</div>
+
+<!-- Edad -->
+
+<div class="input-field col s6">
+  <h6 id="edad"></h6>
+</div>
+
+
+<!-- Email -->
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">contact_mail</i>
+    <input id="email" type="text" name="email" class="validate">
+    <i class="material-icons prefix" id="incorrect7">cancel</i>
+    <i class="material-icons prefix cancel" id="b7">check_circle</i>
+    <label for="email">Email</label>
+    <h6 id="m10">No es un correo válido</h6>
+  </div>
+
+
+
+<!-- Usuario -->
+  <div class="input-field col s6">
+    <i class="material-icons prefix">fingerprint</i>
+    <input id="usuario" type="text" name="usuario" class="validate" required>
+    <i class="material-icons prefix" id="incorrect4">cancel</i>
+    <i class="material-icons prefix cancel" id="b4">check_circle</i>
+    <label for="usuario">CCUsuario</label>
+    <h6 id="m6">El usuario debe tener entre 5 a 12 caracteres y ser solo número o solo letras o solo letras y números</h6>
+    <h6 id="m7">Llene este campo</h6>
+  </div>
+
+  
+
+  <!-- Validar Usuario -->
+
+  <div class="input-field col s6">
+    <i class="material-icons prefix">fingerprint</i>
+    <input id="Vusuario" type="text" name="Vusuario" class="validate" required>
+    <i class="material-icons prefix" id="incorrect41">cancel</i>
+    <i class="material-icons prefix cancel" id="b41">check_circle</i>
+    <label for="Vusuario">Validar Usuario</label>
+    <h6 id="m11">El usuario no coincide</h6>
+    <h6 id="m12">Llene este campo</h6>
+  </div>
+
+
+<!-- Contraseña -->
+
+  <div class="input-field col s6">
+    <i class="material-icons prefix">keyboard</i>
+    <input id="password" type="password" name="password" class="validate">
+    <i class="material-icons prefix" id="incorrect5">cancel</i>
+    <i class="material-icons prefix cancel" id="b5">check_circle</i>
+    <label for="password">Contraseña</label>
+    <h6 id="m8">La contraseña debe tener de 10 a 20 caracteres, mayúsculas, minúsculas, números y un caracter especial [#,/,&]</h6>
+    
+
+  </div> 
+
+<!-- Verificación contraseña -->
+
+  <div class="input-field col s6">
+    <i class="material-icons prefix">keyboard</i>
+    <input id="password2" type="password" name="password2" class="validate">
+    <i class="material-icons prefix" id="incorrect6">cancel</i>
+    <i class="material-icons prefix cancel" id="b6">check_circle</i>
+    <label for="password2">Confirmar Contraseña</label>
+    <h6 id="m9">Las contraseñas no coinciden</h6>
+  </div> 
+
+
+  <!-- Enfermedades -->
+  <div class="progress">
+    <i class="small material-icons prefix">local_hospital</i>  </div> 
+   
+    <h6>  ¿Ha sufrido enfermedades?</h6>
+  <label>
+    <input name="group1" id="no1" type="radio"  onchange="ocultar()" />
+    <span>No</span>
+  </label>
+<p>
+  <label>
+    <input name="group1" id="si1" type="radio" onchange="mostrar()" />
+    <span>Sí</span>
+  </label>
+</p>
+</div>
+<div id="senfermedades"> <h6>¿Las enfermedades que ha sufrido son contagiosas?</h6>
+
+<label>
+  <b>
+  <input name="group2" type="radio"  onchange="ocultar1()"/>
+  <span>No</span>
+</label>
+</p>
+<p>
+<label>
+  <input name="group2" type="radio" onchange="mostrar1()"/>
+  <span>Sí</span>
+</label>
+</p>
+</div>
+<div id="enfermedadesc">
+¿Cuáles?
+<input id="password" type="text" name="password" class="validate">
+</div>
+
+
+
+ </fieldset>
+ <br/>
+
+<!-- Botones -->
+
+ <button class="btn waves-effect waves-light btn-large" type="submit" name="submit">Registrar
+    <i class="material-icons right">send</i>
+  </button>
+
+  <button class="btn waves-effect waves-light btn-large" type="reset" name="limpiar">Borrar
+    <i class="material-icons right">remove_circle</i>
+  </button>
+
+</form>
+</section>
+
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>  
+<script src="validacion.js"></script>  <!-- Documento JavaScript para la validación -->
+
+
+<!-- Cambiar formato de la fecha de nacimiento para poder calcular la edad -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('select').formSelect();
+        
+    });
+
+    $(document).ready(function(){
+      $('#fechan').datepicker({format:'yyyy-mm-dd'});
+    });
+  
+  </script>
+
+</body>
+</html>

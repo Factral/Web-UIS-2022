@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html  lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="style4.css" type="text/css" rel="stylesheet">
+<title>Grilla en Jquery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>Grilla en Jquery</h1>
+  <div class="row">
+    <div class="input-field col s6">
+      <i class="large material-icons prefix">search</i>
+      <textarea id="myInput" class="materialize-textarea"></textarea>
+      <label for="myInput" id="search">Search</label>
+    </div>
+  </div>
+  
+  <table class="highlight" id="table">
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Website</th>
+      <th>Company</th>
+    </tr>
+ 
+  </table>
+
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>  
+<script src="validacion.js"></script>  <!-- Documento JavaScript para la validación -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('select').formSelect();
+        
+    });
+    
+  
+  </script>
+
+</body>
+</html>
+
+<!--  Llenar la tabla con los datos correspondientes y hacer la función de filtrado-->
+<script>
+
+$(document).ready(function(){
+
+  $("#myInput").keyup(function(){
+
+      _this = this;
+      $.each($("#table tr"), function() {
+      if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1 &&  $(this).index() != 0)
+      $(this).hide();
+
+      else
+      $(this).show();
+      });
+
+  });
+
+});
+
+
+
+
+  $(document).ready(function(){
+      $.get("https://jsonplaceholder.typicode.com/users", function(data){
+          var datos = "";
+          $.each(data, function(key, value){
+             datos += "<tr>"; 
+             datos += "<td>"+value.name+"</td>"; 
+             datos += "<td>"+ value.username + "</td>"; 
+             datos += "<td>"+ value.email + "</td>"; 
+             datos += "<td>"+ value.address.street + ", " +value.address.city + "</td>"; 
+             datos += "<td>"+ value.phone + "</td>"; 
+             datos += "<td>"+ value.website + "</td>";
+             datos += "<td>"+ value.company.name + "</td>";  
+             datos += "</tr>";
+          });
+          $("#table").append(datos);
+      });
+      
+  });
+</script>
