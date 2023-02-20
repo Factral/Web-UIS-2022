@@ -1,0 +1,18 @@
+.Loading > .Spinner{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+/* .Loading > #list4 > *{
+    background-color: #39c51565;
+    height: 10px;
+    overflow-y: hidden;
+}
+.Loading > #list4{
+    height: 50px;
+    overflow-y:visible;
+} */
+
+/* .Loading {
+
+} */
